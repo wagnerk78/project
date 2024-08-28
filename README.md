@@ -1,27 +1,32 @@
-# Project
+# Projeto TO DO Font End
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 18.2.1.
+Este projeto faz parte de um desafio de Node + Angular. Depois o usuário logado, ele vai para as tarefas a serem realizadas.
 
-## Development server
+## Configuração e Execução
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
 
-## Code scaffolding
+1. **Clonar o repositório:**
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+   ```bash
+   git clone https://github.com/wagnerk78/projeto-to-do-frontend.git
+   cd project
+   ```
 
-## Build
+2. **Compilar o projeto:**
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+   ```bash
+     ng serve
+   ```
 
-## Running unit tests
+3. **Acessar a página inicial**
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+   ```bash
+      http://localhost:4200/usuarios/login
+   ```
 
-## Running end-to-end tests
+4. **Acessar a página de cadastro**
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+   ```bash
+       http://localhost:4200/usuarios
+   ```
 
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
