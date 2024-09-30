@@ -2,21 +2,22 @@
   <mat-card-content>
     <form [formGroup]="taskForm" (ngSubmit)="addTask()">
       <div class="bloco">
-        <label for="description">Descrição:</label>
-        <input id="description" formControlName="description" class="input-field">
+        <label for="descricao">Descrição:</label>
+        <input id="descricao" formControlName="descricao" class="input-field">
       </div>
-
+      
       <div class="bloco">
-        <label for="priority">Prioridade:</label>
-        <input id="priority" formControlName="priority" class="input-field">
+        <label for="prioridade">Prioridade:</label>
+        <input id="prioridade" formControlName="prioridade" class="input-field">
       </div>
+      
 
       <button type="submit" [disabled]="taskForm.invalid" class="save-button">Adicionar Tarefa</button>
     </form>
 
     <ul class="task-list">
       <li *ngFor="let task of tasks" class="task-item">
-        {{ task.description }} - {{ task.priority }}
+        {{ task.descricao }} - {{ task.prioridade }}
         <button (click)="completeTask(task.id)" class="complete-button">Marcar como Concluída</button>
       </li>
     </ul>
