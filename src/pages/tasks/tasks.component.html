@@ -17,10 +17,18 @@
 
     <ul class="task-list">
       <li *ngFor="let task of tasks" class="task-item">
-        {{ task.descricao }} - {{ task.prioridade }}
-        <button (click)="completeTask(task.id)" class="complete-button">Marcar como Concluída</button>
+        <mat-card appearance="outlined">
+          <mat-card-content> <strong>{{ task.descricao }}</strong></mat-card-content>
+          <section>
+            <div class="example-button-row">
+              <button mat-flat-button>{{ task.prioridade }}</button>
+              <button mat-flat-button (click)="completeTask(task.id)">Marcar como Concluída</button>
+            </div>
+          </section>
+        </mat-card>
       </li>
     </ul>
+    
 
     <button (click)="logout()" class="logout-button">Sair</button>
   </mat-card-content>

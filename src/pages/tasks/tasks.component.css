@@ -50,14 +50,30 @@
     list-style-type: none;
     padding: 0;
     margin-top: 10px;
-    width: 100%;
+    display: flex; /* Altera para flexbox */
+    flex-wrap: wrap; /* Permite que os itens se movam para a linha seguinte */
+    gap: 10px; /* Espaçamento entre os itens */
   }
   
   .task-item {
-    display: flex;
-    justify-content: space-between;
+    display: flex; /* Mantém o conteúdo do card em coluna */
     padding: 8px;
-    border-bottom: 1px solid #ccc;
+    box-sizing: border-box; /* Inclui padding e border no cálculo da largura */
+  }
+  
+  mat-card {
+    width: 100%; /* Faz o mat-card ocupar toda a largura do item */
+    height: 150px; /* Define uma altura fixa para todos os cartões */
+    display: flex; /* Permite o uso de flexbox para o conteúdo interno */
+    flex-direction: column; /* Alinha o conteúdo em coluna */
+    justify-content: space-between; /* Distribui o espaço entre os itens */
+  }
+
+  mat-flat-button {
+    width: 30%;
+    height: 10%; 
+
+
   }
   
   .complete-button {
@@ -69,5 +85,18 @@
     margin-top: 20px;
     background-color: red;
     color: white;
+  }
+
+  .example-card-footer {
+    padding: 16px;
+  }
+
+  .example-button-row {
+    display: table-cell;
+    max-width: 600px;
+  }
+  
+  .example-button-row .mat-mdc-button-base {
+    margin: 8px;
   }
   

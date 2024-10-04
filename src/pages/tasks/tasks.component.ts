@@ -6,11 +6,12 @@ import { MatCardModule } from '@angular/material/card';
 import { MatButtonModule } from '@angular/material/button';
 import { catchError } from 'rxjs/operators';
 import { of } from 'rxjs';
+import {MatChipsModule} from '@angular/material/chips';
 
 @Component({
   selector: 'app-tasks',
   standalone: true,
-  imports: [ReactiveFormsModule, CommonModule, MatCardModule, MatButtonModule],
+  imports: [ReactiveFormsModule, CommonModule, MatCardModule, MatButtonModule, MatChipsModule],
   templateUrl: './tasks.component.html',
   styleUrls: ['./tasks.component.css'],
 })
