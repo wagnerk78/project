@@ -1,102 +1,109 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
-  
-  .card {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    width: 100vw;
-    height: 100vh;
-    background-color: lightblue;
-    border-radius: 8px;
-  }
-  
-  .input-field {
-    width: 100%;
-    padding: 8px;
-    margin-top: 8px;
-    margin-bottom: 2px;
-    box-sizing: border-box;
-    border-radius: 5px;
-  }
-  
-  .save-button,
-  .complete-button,
-  .logout-button {
-    background-color: black;
-    color: white;
-    margin-top: 10px;
-    padding: 8px 16px;
-    border: none;
-    cursor: pointer;
-    border-radius: 5px;
-    width: 100%;
-  }
-  
-  .save-button:disabled {
-    background-color: rgba(247, 246, 246, 0.675);
-    cursor: not-allowed;
-  }
-  
-  .bloco {
-    width: 100%;
-  }
-  
-  .task-list {
-    list-style-type: none;
-    padding: 0;
-    margin-top: 10px;
-    display: flex; /* Altera para flexbox */
-    flex-wrap: wrap; /* Permite que os itens se movam para a linha seguinte */
-    gap: 10px; /* Espaçamento entre os itens */
-  }
-  
-  .task-item {
-    display: flex; /* Mantém o conteúdo do card em coluna */
-    padding: 8px;
-    box-sizing: border-box; /* Inclui padding e border no cálculo da largura */
-  }
-  
-  mat-card {
-    width: 100%; /* Faz o mat-card ocupar toda a largura do item */
-    height: 150px; /* Define uma altura fixa para todos os cartões */
-    display: flex; /* Permite o uso de flexbox para o conteúdo interno */
-    flex-direction: column; /* Alinha o conteúdo em coluna */
-    justify-content: space-between; /* Distribui o espaço entre os itens */
-  }
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
-  mat-flat-button {
-    width: 30%;
-    height: 10%; 
+.card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+  background-color: lightblue;
+  border-radius: 8px;
+}
+
+.input-field {
+  width: 100%;
+  padding: 8px;
+  margin-top: 8px;
+  margin-bottom: 2px;
+  box-sizing: border-box;
+  border-radius: 5px;
+}
+
+.save-button,
+.complete-button,
+.logout-button {
+  background-color: black;
+  color: white;
+  margin-top: 10px;
+  padding: 8px 16px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  width: 100%;
+}
+
+.save-button:disabled {
+  background-color: rgba(117, 227, 205, 0.473);
+  cursor: not-allowed;
+}
+
+.bloco {
+  width: 100%;
+}
+
+.task-list {
+  list-style-type: none;
+  padding: 0;
+  margin-top: 10px;
+  display: flex; /* Altera para flexbox */
+  flex-wrap: wrap; /* Permite que os itens se movam para a linha seguinte */
+  gap: 10px; /* Espaçamento entre os itens */
+}
+
+.task-item {
+  display: flex; /* Mantém o conteúdo do card em coluna */
+  padding: 8px;
+  box-sizing: border-box; /* Inclui padding e border no cálculo da largura */
+}
+
+mat-card {
+  width: 100%; /* Faz o mat-card ocupar toda a largura do item */
+  height: 150px; /* Define uma altura fixa para todos os cartões */
+  display: flex; /* Permite o uso de flexbox para o conteúdo interno */
+  flex-direction: column; /* Alinha o conteúdo em coluna */
+  justify-content: space-between; /* Distribui o espaço entre os itens */
+}
+
+mat-flat-button {
+  width: 30%;
+  height: 10%; 
 
 
-  }
-  
-  .complete-button {
-    background-color: green;
-    color: white;
-  }
-  
-  .logout-button {
-    margin-top: 20px;
-    background-color: red;
-    color: white;
-  }
+}
 
-  .example-card-footer {
-    padding: 16px;
-  }
+.complete-button {
+  background-color: green;
+  color: white;
+}
 
-  .example-button-row {
-    display: table-cell;
-    max-width: 600px;
-  }
-  
-  .example-button-row .mat-mdc-button-base {
-    margin: 8px;
-  }
-  
+.logout-button {
+  margin-top: 20px;
+  background-color: red;
+  color: white;
+}
+
+.example-card-footer {
+  padding: 16px;
+}
+
+.example-button-row {
+  display: table-cell;
+  max-width: 600px;
+}
+
+.example-button-row .mat-mdc-button-base {
+  margin: 8px;
+}
+
+.completed-task {
+  background-color: #b3e5fc; /* azul claro */
+}
+
+.completed-task strong {
+  text-decoration: line-through;
+}
